@@ -2,8 +2,11 @@ import * as e from './setup.js';
 import { Cube } from "./Piece.js";
 
 var cube = new Cube();
-cube.setFormula("R U2 R2 U' R2 U' R2 U2 R")
-cube.setAnimateFormula("R U2 R2 U' R2 U' R2 U2 R")
+
+let form = "R U R' U' R' F R2 U' R' U' R U R' F'"
+
+cube.setFormula(form)
+cube.setAnimateFormula(form)
 
 function frame(){
 

@@ -317,10 +317,10 @@ export class Cube{
         if(!invert){
             return form
         } else {
-            return invertFormula(form)
+            form = invertFormula(form)
+            form = [...form].reverse();
+            return form
         }
-
-        
 
     }
 
